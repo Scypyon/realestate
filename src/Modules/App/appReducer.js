@@ -23,7 +23,7 @@ export const appReducer = (state = initState, action) => {
       return {
         ...state,
         houses: [
-          ...state.housese,
+          ...state.houses,
           {
             _id: action.data._id,
             owner: action.data.owner,
@@ -31,6 +31,11 @@ export const appReducer = (state = initState, action) => {
             price: action.data.price
           }
         ]
+      };
+    case housesConstTypes.DELETE_HOUSE_SUCCEED:
+      return {
+        ...state,
+        houses: [...state.houses.filter(el => el._id !== action.id)]
       };
     default: {
       return state;
