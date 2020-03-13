@@ -1,0 +1,7 @@
+export const ADD_HOUSE_REQUEST = "houses:ADD_HOUSE_REQUEST";
+export const ADD_HOUSE_SUCCEED = "houses:ADD_HOUSE_SUCCEED";
+export const ADD_HOUSE_FAILED = "houses:ADD_HOUSE_FAILED";
+
+export const DELETE_HOUSE_REQUEST = "houses:DELETE_HOUSE_REQUEST";
+export const DELETE_HOUSE_SUCCEED = "houses:DELETE_HOUSE_SUCCEED";
+export const DELETE_HOUSE_FAILED = "houses:DELETE_HOUSE_FAILED";
